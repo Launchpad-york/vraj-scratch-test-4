@@ -150,21 +150,35 @@ body {
   position: relative;
   padding: clamp(3rem, 8vw, 6rem) 0 clamp(4rem, 10vw, 7rem);
   overflow: hidden;
+  isolation: isolate;
+  background-color: var(--paper);
+  background-image: linear-gradient(
+      165deg,
+      rgba(250, 248, 255, 0.88) 0%,
+      rgba(255, 250, 252, 0.72) 42%,
+      rgba(248, 244, 255, 0.82) 100%
+    ),
+    url('assets/images/hero-instagram-gradient.svg');
+  background-size: auto, cover;
+  background-position: center, center;
+  background-repeat: no-repeat;
 }
 
 .hero-glow {
   position: absolute;
   inset: -20% -10% auto;
   height: 70%;
-  background: radial-gradient(circle, rgba(245, 133, 41, 0.35), transparent 60%),
-    radial-gradient(circle at 70% 40%, rgba(81, 91, 212, 0.35), transparent 55%);
+  z-index: 0;
+  background: radial-gradient(circle, rgba(245, 133, 41, 0.22), transparent 58%),
+    radial-gradient(circle at 70% 40%, rgba(81, 91, 212, 0.2), transparent 52%);
   filter: blur(40px);
-  opacity: 0.85;
+  opacity: 0.9;
   pointer-events: none;
 }
 
 .hero-inner {
   position: relative;
+  z-index: 1;
 }
 
 .eyebrow {
@@ -492,6 +506,22 @@ body {
   body {
     background: radial-gradient(circle at 20% 15%, rgba(221, 42, 123, 0.18), transparent 45%),
       radial-gradient(circle at 85% 10%, rgba(81, 91, 212, 0.22), transparent 45%), var(--paper);
+  }
+
+  .hero {
+    background-color: var(--paper);
+    background-image: linear-gradient(
+        165deg,
+        rgba(9, 10, 16, 0.92) 0%,
+        rgba(12, 10, 18, 0.78) 38%,
+        rgba(14, 12, 22, 0.9) 100%
+      ),
+      url('assets/images/hero-instagram-gradient.svg');
+  }
+
+  .hero-glow {
+    background: radial-gradient(circle, rgba(245, 133, 41, 0.28), transparent 55%),
+      radial-gradient(circle at 70% 40%, rgba(221, 42, 123, 0.22), transparent 50%);
   }
 
   .site-header {
