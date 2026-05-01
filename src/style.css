@@ -386,7 +386,20 @@ body {
   pointer-events: none;
 }
 
+/* Stack back → front so each photo stays visible in the fan (DOM order alone put three on top). */
+.mock-card--three {
+  z-index: 1;
+  transform: rotate(-2deg);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45);
+}
+
+.mock-card--two {
+  z-index: 2;
+  transform: rotate(4deg) translate(10px, -6px);
+}
+
 .mock-card--one {
+  z-index: 3;
   transform: rotate(-6deg) translate(-12px, 12px);
 }
 
@@ -394,17 +407,8 @@ body {
   background: linear-gradient(160deg, rgba(245, 133, 41, 0.55), rgba(221, 42, 123, 0.45));
 }
 
-.mock-card--two {
-  transform: rotate(4deg) translate(10px, -6px);
-}
-
 .mock-card--two::after {
   background: linear-gradient(200deg, rgba(81, 91, 212, 0.5), rgba(221, 42, 123, 0.4));
-}
-
-.mock-card--three {
-  transform: rotate(-2deg);
-  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45);
 }
 
 .mock-card--three::after {
