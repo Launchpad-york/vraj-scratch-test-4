@@ -67,19 +67,18 @@ body {
   padding: 1rem 0;
 }
 
-.wordmark {
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  font-size: 1.35rem;
-  background: linear-gradient(
-    120deg,
-    var(--accent-start),
-    var(--accent-mid),
-    var(--accent-end)
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+.brand {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.brand-logo {
+  width: 2.25rem;
+  height: 2.25rem;
+  display: block;
+  border-radius: 50%;
+  object-fit: contain;
 }
 
 .nav {
