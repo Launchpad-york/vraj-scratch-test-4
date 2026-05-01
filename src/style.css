@@ -254,8 +254,45 @@ body {
   padding: 1.5rem;
   border-radius: var(--radius-md);
   border: 1px solid var(--line);
-  background: var(--card);
   box-shadow: var(--shadow);
+  background: radial-gradient(ellipse 115% 85% at 100% -5%, rgba(245, 133, 41, 0.18), transparent 52%),
+    radial-gradient(ellipse 95% 75% at -5% 105%, rgba(221, 42, 123, 0.12), transparent 48%), linear-gradient(165deg, #ffffff 0%, #fcf8ff 100%);
+}
+
+.feature-card:nth-child(1) {
+  background: radial-gradient(ellipse 118% 90% at 100% -8%, rgba(245, 133, 41, 0.28), transparent 54%),
+    radial-gradient(ellipse 90% 80% at 0% 100%, rgba(221, 42, 123, 0.14), transparent 50%),
+    linear-gradient(158deg, #ffffff 0%, #fff6f0 48%, #fffbfc 100%);
+}
+
+.feature-card:nth-child(2) {
+  background: radial-gradient(ellipse 100% 88% at 90% -5%, rgba(221, 42, 123, 0.22), transparent 52%),
+    radial-gradient(ellipse 105% 70% at 5% 100%, rgba(81, 91, 212, 0.16), transparent 48%),
+    linear-gradient(168deg, #ffffff 0%, #fdf5ff 45%, #fffafe 100%);
+}
+
+.feature-card:nth-child(3) {
+  background: radial-gradient(ellipse 110% 85% at 100% 8%, rgba(81, 91, 212, 0.24), transparent 52%),
+    radial-gradient(ellipse 85% 75% at 0% 88%, rgba(245, 133, 41, 0.1), transparent 48%),
+    linear-gradient(152deg, #ffffff 0%, #f5f8ff 50%, #fafcff 100%);
+}
+
+.feature-card:nth-child(4) {
+  background: radial-gradient(ellipse 95% 90% at 85% -10%, rgba(142, 86, 255, 0.15), transparent 50%),
+    radial-gradient(ellipse 100% 85% at 0% 100%, rgba(221, 42, 123, 0.16), transparent 52%),
+    linear-gradient(162deg, #ffffff 0%, #f9f7ff 46%, #fffcfd 100%);
+}
+
+.feature-card:nth-child(5) {
+  background: radial-gradient(ellipse 105% 80% at 100% -5%, rgba(245, 133, 41, 0.16), transparent 48%),
+    radial-gradient(ellipse 115% 90% at -5% 100%, rgba(81, 91, 212, 0.2), transparent 54%),
+    linear-gradient(170deg, #ffffff 0%, #fff8f6 42%, #f6f8ff 100%);
+}
+
+.feature-card:nth-child(6) {
+  background: radial-gradient(ellipse 100% 85% at 95% -8%, rgba(81, 91, 212, 0.18), transparent 50%),
+    radial-gradient(ellipse 95% 80% at 0% 100%, rgba(100, 120, 200, 0.12), transparent 48%),
+    linear-gradient(160deg, #ffffff 0%, #f6f8fc 52%, #f9fafe 100%);
 }
 
 .feature-card h3 {
@@ -498,6 +535,48 @@ body {
 
   .features {
     background: linear-gradient(180deg, rgba(18, 19, 29, 0.35), rgba(18, 19, 29, 0.92));
+  }
+
+  .feature-card {
+    background: radial-gradient(ellipse 115% 85% at 100% -5%, rgba(245, 133, 41, 0.32), transparent 52%),
+      radial-gradient(ellipse 95% 75% at -5% 105%, rgba(221, 42, 123, 0.2), transparent 48%),
+      linear-gradient(165deg, #1c1f2e 0%, #12131d 100%);
+  }
+
+  .feature-card:nth-child(1) {
+    background: radial-gradient(ellipse 118% 90% at 100% -8%, rgba(245, 133, 41, 0.45), transparent 54%),
+      radial-gradient(ellipse 90% 80% at 0% 100%, rgba(221, 42, 123, 0.25), transparent 50%),
+      linear-gradient(158deg, #1e1a26 0%, #12131d 55%, #14121a 100%);
+  }
+
+  .feature-card:nth-child(2) {
+    background: radial-gradient(ellipse 100% 88% at 90% -5%, rgba(221, 42, 123, 0.38), transparent 52%),
+      radial-gradient(ellipse 105% 70% at 5% 100%, rgba(81, 91, 212, 0.32), transparent 48%),
+      linear-gradient(168deg, #1a1728 0%, #12131d 52%, #13101c 100%);
+  }
+
+  .feature-card:nth-child(3) {
+    background: radial-gradient(ellipse 110% 85% at 100% 8%, rgba(81, 91, 212, 0.42), transparent 52%),
+      radial-gradient(ellipse 85% 75% at 0% 88%, rgba(245, 133, 41, 0.18), transparent 48%),
+      linear-gradient(152deg, #161b2e 0%, #12131d 50%, #101322 100%);
+  }
+
+  .feature-card:nth-child(4) {
+    background: radial-gradient(ellipse 95% 90% at 85% -10%, rgba(142, 86, 255, 0.28), transparent 50%),
+      radial-gradient(ellipse 100% 85% at 0% 100%, rgba(221, 42, 123, 0.22), transparent 52%),
+      linear-gradient(162deg, #1a1828 0%, #12131d 48%, #14121e 100%);
+  }
+
+  .feature-card:nth-child(5) {
+    background: radial-gradient(ellipse 105% 80% at 100% -5%, rgba(245, 133, 41, 0.26), transparent 48%),
+      radial-gradient(ellipse 115% 90% at -5% 100%, rgba(81, 91, 212, 0.35), transparent 54%),
+      linear-gradient(170deg, #1c1724 0%, #12131d 52%, #101520 100%);
+  }
+
+  .feature-card:nth-child(6) {
+    background: radial-gradient(ellipse 100% 85% at 95% -8%, rgba(81, 91, 212, 0.3), transparent 50%),
+      radial-gradient(ellipse 95% 80% at 0% 100%, rgba(120, 140, 220, 0.18), transparent 48%),
+      linear-gradient(160deg, #151a26 0%, #12131d 55%, #0f141c 100%);
   }
 
   .cta-inner {
