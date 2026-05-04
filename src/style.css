@@ -318,6 +318,19 @@ body {
   margin: 0 0 1rem;
 }
 
+#spotlight-title {
+  background: linear-gradient(
+    120deg,
+    var(--accent-start),
+    var(--accent-mid),
+    var(--accent-end)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
 .spotlight-copy > p {
   margin: 0 0 1.25rem;
   color: rgba(244, 245, 251, 0.78);
